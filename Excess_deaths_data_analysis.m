@@ -109,7 +109,7 @@ pc_correlation_plots(score_counts,counts_norm,1,'counts',counts_varnames,1,1)
 
 
 %% GHSI PCA:
-GHSI = mat_transf_out(:,[9:14 16]) ;  % Svi GHSI but Risk, which is included in demo variables
+GHSI = mat_transf_out(:,[9:14 16]) ;  % All GHSI but Risk, which is included in demo variables
 GHSI_norm = normalize(GHSI) ; 
 GHSI_varnames = Varnames([9:14 16]) ; 
 [coeff_GHSI, score_GHSI, ~,~,explained_GHSI] = pca(GHSI_norm) ; 
